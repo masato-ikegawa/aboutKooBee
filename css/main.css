@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.minibox, #wrapper .box div span {
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  font-size: 150%;
+  width: 100%;
+  margin-right: 70%;
+  padding: 0 4%;
+}
+
+#wrapper {
+  width: 90%;
+  margin: auto;
+}
+#wrapper .box {
+  margin: auto;
+  border: solid 3px red;
+  border-radius: 10px;
+  text-align: center;
+  width: 70%;
+  height: 100%;
+}
+#wrapper .box p {
+  font-size: 3vw;
+}
+#wrapper .box div {
+  margin: 0 15%;
+}
+#wrapper .box div p {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */
