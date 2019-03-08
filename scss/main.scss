@@ -3,11 +3,20 @@
   padding: 0;}
 
 
-$basecolor:red;
+$basecolor:yellow;
 $radious:10px;
 $weight:bold;
 
+.bigbox{
+	margin: auto;
+	border:solid 3px $basecolor;
+	border-radius: $radious;
+	text-align: center;
+	width: 70%;
+	height: 100%;
+	box-shadow: 10px 10px 15px -10px desaturate($basecolor, 30%);
 
+}
 
 .minibox{
 	border-radius: $radious;
@@ -20,17 +29,26 @@ $weight:bold;
 	padding: 0 4%;
 }
 
+.circle{
+	border-radius: 50%;
+	border:solid 5px $basecolor;
+	background-color: white;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 125px;
+}
+
+.yajirusi{
+	font-size: 420%;
+	color: $basecolor;
+}
+
 #wrapper{
 	width:90%;
 	margin: auto;
 	
 	.box{
-		margin: auto;
-		border:solid 3px $basecolor;
-		border-radius: $radious;
-		text-align: center;
-		width: 70%;
-		height: 100%;
+		@extend .bigbox;
 
 		p{
 			font-size: 3vw;
@@ -46,5 +64,38 @@ $weight:bold;
 			}
 		}
 	}
+
+	.button{
+		width: 100px;
+		height: 100px;
+		@extend .circle;
+		span{
+			@extend .yajirusi;
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
