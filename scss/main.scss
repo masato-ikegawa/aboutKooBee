@@ -1,0 +1,50 @@
+
+*{margin: 0;
+  padding: 0;}
+
+
+$basecolor:red;
+$radious:10px;
+$weight:bold;
+
+
+
+.minibox{
+	border-radius: $radious;
+	color: white;
+	background-color: $basecolor;
+	text-align:center;
+	font-size: 150%;
+	width: 100%;
+	margin-right: 70%;
+	padding: 0 4%;
+}
+
+#wrapper{
+	width:90%;
+	margin: auto;
+	
+	.box{
+		margin: auto;
+		border:solid 3px $basecolor;
+		border-radius: $radious;
+		text-align: center;
+		width: 70%;
+		height: 100%;
+
+		p{
+			font-size: 3vw;
+		}
+		div{
+			margin: 0 15%;
+			p{
+				font-size:200%;
+				font-weight: $weight;
+			}
+			span{
+			@extend .minibox;
+			}
+		}
+	}
+
+}
