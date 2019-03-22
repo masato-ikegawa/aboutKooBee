@@ -3,35 +3,58 @@
   padding: 0;}
 
 
-$basecolor:yellow;
-$radious:10px;
+
+
+$basecolor:#fbd100;
+$radious:32px;
 $weight:bold;
+
+a{
+	text-decoration: none;
+    color: black;}
+
+body{
+	font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
 
 .bigbox{
 	margin: auto;
-	border:solid 3px $basecolor;
+	border:solid 1px $basecolor;
 	border-radius: $radious;
 	text-align: center;
-	width: 70%;
+	width: 68%;
 	height: 100%;
+	padding: 5%;
 	box-shadow: 10px 10px 15px -10px desaturate($basecolor, 30%);
-
+	transition-duration: 0.3s;
 }
+.bigbox:hover{transform:scale(0.9,0.9)}
+.bigbox:active{
+  transform:scale(0.9,0.9)
+}
+
 
 .minibox{
 	border-radius: $radious;
 	color: white;
 	background-color: $basecolor;
 	text-align:center;
-	font-size: 150%;
+	font-size: 69%;
 	width: 100%;
-	margin-right: 70%;
-	padding: 0 4%;
+	margin-left: -91%;
+	padding: 0 7%;
+}
+
+.marker{
+	font-size: 100%;
+	font-weight: $weight;
+	margin: 0 10% 0 -23%;
+	background:linear-gradient(transparent 80%, $basecolor 0%);
 }
 
 .circle{
 	border-radius: 50%;
-	border:solid 5px $basecolor;
+	border:solid 2px $basecolor;
 	background-color: white;
 	text-align: center;
 	vertical-align: middle;
@@ -39,24 +62,60 @@ $weight:bold;
 }
 
 .yajirusi{
-	font-size: 420%;
-	color: $basecolor;
+	//font-size: 380%;
+	//display: block;
+    //height: 100%;
+    //width: 100%;
+	//color: $basecolor;
+
+	display: block;
+    width: 25%;
+    height: 25%;
+    margin: 40% 0% 0% 34%;
+    border-top: 4px solid #fbd100;
+    border-right: 4px solid #fbd100;
+    transform: rotate(-45deg);
 }
 
+
 #wrapper{
-	width:90%;
+	width:100%;
 	margin: auto;
+
+  #gnWrapper{
+
+	.search{
+		margin: 0% 25% 11% 21%;
+		padding-top: 10%;
+
+		img{
+			width: 145%;
+    		margin-left: -19%;
+		}
+
+	}
 	
 	.box{
 		@extend .bigbox;
-
-		p{
-			font-size: 3vw;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		.koobee{
+			width: 95%;
+    		margin: 0% 0% 0% 4%;
+		}
+		.department{
+			width: 110%;
+    		margin: -2% 0% 1% -4%;
+		}
+		.schedule{
+			width: 116%;
+    		margin: -8% 0 -23% -8.5%;
+		    border-radius: $radious;
 		}
 		div{
-			margin: 0 15%;
+			margin: 4% 15% 0% 15%;
 			p{
-				font-size:200%;
+				font-size:101%;
 				font-weight: $weight;
 			}
 			span{
@@ -66,12 +125,80 @@ $weight:bold;
 	}
 
 	.button{
-		width: 100px;
-		height: 100px;
+		width: 50px;
+		height: 50px;
+		position: fixed;
+	    top: 90%;
+	    right: 4%;
+	    z-index: 2;
 		@extend .circle;
 		span{
 			@extend .yajirusi;
+		}
+	}
+	
 
+	//child
+	.top{
+		
+		span{
+			@extend .minibox;
+			margin-left: 20%;
+			margin-right: 5%;
+			font-size: 90%;
+			padding: 0 4%;
+		}
+		p{
+			text-align: left;
+		    font-size: 90%;
+		    margin-left: 12%;
+		    height: 100%;
+		    line-height: 180%;
+		}
+		.intro{
+			font-size:75%;
+			padding: 0% 3%;
+		}
+		.title{
+			font-size: 90%;
+			text-align: center;
+			font-weight: $weight;
+			margin: 0;
+		}
+	}
+
+	.aboutContent{
+		margin-top: 10%;
+		text-align: center;
+		span{
+			@extend .marker;
+			margin: 0 10% 0% 9%;
+		}
+		p{
+			font-size: 90%;
+			margin-top: 3%;
+		    height: 100%;
+		    width: 80%;
+		    text-align: left;
+		    line-height: 200%;
+		    margin-left: 12%;
+		}
+
+		div{
+			margin-top: 5%;
+			img{
+				width: 90%;
+			}
+		}
+	}
+
+	.yearEvent{
+		list-style-type: none;
+		font-size: 100%;
+		height: 100%;
+		margin: 0 10% 0 20%;
+		li{
+			margin:8% 0;
 		}
 	}
 
@@ -85,7 +212,7 @@ $weight:bold;
 
 
 
-
+}
 
 
 

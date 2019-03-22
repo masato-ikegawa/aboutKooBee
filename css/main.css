@@ -1,40 +1,172 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
-.minibox, #wrapper .box div span {
-  border-radius: 10px;
-  color: white;
-  background-color: red;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "游ゴシック体", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+.bigbox, #wrapper #gnWrapper .box {
+  margin: auto;
+  border: solid 1px #fbd100;
+  border-radius: 32px;
   text-align: center;
-  font-size: 150%;
+  width: 68%;
+  height: 100%;
+  padding: 5%;
+  box-shadow: 10px 10px 15px -10px #d5b826;
+  transition-duration: 0.3s;
+}
+
+.bigbox:hover, #wrapper #gnWrapper .box:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.bigbox:active, #wrapper #gnWrapper .box:active {
+  transform: scale(0.9, 0.9);
+}
+
+.minibox, #wrapper #gnWrapper .box div span, #wrapper #gnWrapper .top span {
+  border-radius: 32px;
+  color: white;
+  background-color: #fbd100;
+  text-align: center;
+  font-size: 69%;
   width: 100%;
-  margin-right: 70%;
-  padding: 0 4%;
+  margin-left: -91%;
+  padding: 0 7%;
+}
+
+.marker, #wrapper #gnWrapper .aboutContent span {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 0 10% 0 -23%;
+  background: linear-gradient(transparent 80%, #fbd100 0%);
+}
+
+.circle, #wrapper #gnWrapper .button {
+  border-radius: 50%;
+  border: solid 2px #fbd100;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 125px;
+}
+
+.yajirusi, #wrapper #gnWrapper .button span {
+  display: block;
+  width: 25%;
+  height: 25%;
+  margin: 40% 0% 0% 34%;
+  border-top: 4px solid #fbd100;
+  border-right: 4px solid #fbd100;
+  transform: rotate(-45deg);
 }
 
 #wrapper {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
-#wrapper .box {
-  margin: auto;
-  border: solid 3px red;
-  border-radius: 10px;
-  text-align: center;
-  width: 70%;
-  height: 100%;
+#wrapper #gnWrapper .search {
+  margin: 0% 25% 11% 21%;
+  padding-top: 10%;
 }
-#wrapper .box p {
-  font-size: 3vw;
+#wrapper #gnWrapper .search img {
+  width: 145%;
+  margin-left: -19%;
 }
-#wrapper .box div {
-  margin: 0 15%;
+#wrapper #gnWrapper .box {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
-#wrapper .box div p {
-  font-size: 200%;
+#wrapper #gnWrapper .box .koobee {
+  width: 95%;
+  margin: 0% 0% 0% 4%;
+}
+#wrapper #gnWrapper .box .department {
+  width: 110%;
+  margin: -2% 0% 1% -4%;
+}
+#wrapper #gnWrapper .box .schedule {
+  width: 116%;
+  margin: -8% 0 -23% -8.5%;
+  border-radius: 32px;
+}
+#wrapper #gnWrapper .box div {
+  margin: 4% 15% 0% 15%;
+}
+#wrapper #gnWrapper .box div p {
+  font-size: 101%;
   font-weight: bold;
+}
+#wrapper #gnWrapper .button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 90%;
+  right: 4%;
+  z-index: 2;
+}
+#wrapper #gnWrapper .top span {
+  margin-left: 20%;
+  margin-right: 5%;
+  font-size: 90%;
+  padding: 0 4%;
+}
+#wrapper #gnWrapper .top p {
+  text-align: left;
+  font-size: 90%;
+  margin-left: 12%;
+  height: 100%;
+  line-height: 180%;
+}
+#wrapper #gnWrapper .top .intro {
+  font-size: 75%;
+  padding: 0% 3%;
+}
+#wrapper #gnWrapper .top .title {
+  font-size: 90%;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+#wrapper #gnWrapper .aboutContent {
+  margin-top: 10%;
+  text-align: center;
+}
+#wrapper #gnWrapper .aboutContent span {
+  margin: 0 10% 0% 9%;
+}
+#wrapper #gnWrapper .aboutContent p {
+  font-size: 90%;
+  margin-top: 3%;
+  height: 100%;
+  width: 80%;
+  text-align: left;
+  line-height: 200%;
+  margin-left: 12%;
+}
+#wrapper #gnWrapper .aboutContent div {
+  margin-top: 5%;
+}
+#wrapper #gnWrapper .aboutContent div img {
+  width: 90%;
+}
+#wrapper #gnWrapper .yearEvent {
+  list-style-type: none;
+  font-size: 100%;
+  height: 100%;
+  margin: 0 10% 0 20%;
+}
+#wrapper #gnWrapper .yearEvent li {
+  margin: 8% 0;
 }
 
 /*# sourceMappingURL=main.css.map */
